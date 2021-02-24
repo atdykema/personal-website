@@ -1,0 +1,51 @@
+div{
+    display: block;
+}
+
+body{
+    background-color: black;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.main-hero{
+    height: 98vh;
+}
+
+.inner-main-hero{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    height: 100%;
+    background-image: url(/images/pwherobg2.svg);
+    background-size: cover;
+}
+
+.title-name{
+    color: blanchedalmond;
+    padding-top: 15vh;
+    font-size: 10rem;
+}
+
+.title-catch{
+    color: blanchedalmond;
+    padding-top: 15vh;
+    font-size: 3rem;
+}
+
+.nav-bar{
+    padding-top: 15vh;
+    font-size: 5rem;
+    color: gray;
+}
+
+.blockchain{
+    display: flex;
+    flex-direction: column;
+    margin: 10vh;
+    background-color: gray;
+}
