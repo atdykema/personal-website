@@ -1,51 +1,66 @@
+@font-face{
+    font-family: main-font;
+    src:url(Alcubierre.otf)
+}
+
 div{
     display: block;
 }
 
 body{
-    background-color: black;
+    font-family: main-font;
+    background-color: white;
 }
 
 a{
     text-decoration: none;
-    color: white;
+    color: grey;
 }
 
 .main-hero{
-    height: 98vh;
+    height: 97vh;
 }
 
 .inner-main-hero{
     display: flex;
+    border-width: 1px;
+    border: .1vw solid black;
     flex-direction: column;
     align-items: center;
     margin: 10px;
     height: 100%;
-    background-image: url(/images/pwherobg2.svg);
     background-size: cover;
 }
 
 .title-name{
-    color: blanchedalmond;
+    color: black;
     padding-top: 15vh;
-    font-size: 10rem;
+    font-size: 10vw;
 }
 
 .title-catch{
-    color: blanchedalmond;
+    color: black;
     padding-top: 15vh;
-    font-size: 3rem;
+    font-size: 4vw;
 }
 
 .nav-bar{
     padding-top: 15vh;
-    font-size: 5rem;
-    color: gray;
+    font-size: 4vw;
+    color: black;
 }
 
-.blockchain{
+.main-subject-box{
+    height: auto;
+}
+
+.inner-subject-box{
     display: flex;
+    border-width: 1px;
+    border: .1vw solid black;
     flex-direction: column;
-    margin: 10vh;
-    background-color: gray;
+    align-items: center;
+    margin: 10px;
+    height: 100%;
+    background-size: cover;
 }
