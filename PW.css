@@ -9,7 +9,7 @@ div{
 
 body{
     font-family: main-font;
-    background-color: white;
+    background: linear-gradient(to top, #ffffff, #ffffff)
 }
 
 a{
@@ -19,6 +19,7 @@ a{
 
 .main-hero{
     height: 97vh;
+    
 }
 
 .inner-main-hero{
@@ -27,20 +28,22 @@ a{
     border: .1vw solid black;
     flex-direction: column;
     align-items: center;
-    margin: 10px;
+    margin: 1vh;
     height: 100%;
     background-size: cover;
+    background-color: white;
+    box-shadow: 2px 4px 6px rgba(0,0,0,.5);
 }
 
 .title-name{
     color: black;
-    padding-top: 15vh;
+    margin-top: 15vh;
     font-size: 10vw;
 }
 
 .title-catch{
     color: black;
-    padding-top: 15vh;
+    margin-top: 15vh;
     font-size: 4vw;
 }
 
@@ -63,11 +66,14 @@ a{
     margin: 10px;
     height: 100%;
     background-size: cover;
+    background-color: white;
+    box-shadow: 2px 4px 6px rgba(0,0,0,.5);
 }
 
 .subject-title{
     padding-top: 10vh;
     font-size: 6vw;
+    font-weight: 500;
 }
 
 .subject-body{
@@ -82,6 +88,43 @@ a{
     height: 10vh;
     width: 70vw;
     font-size: 5vw;
-    background-color: grey;
+    border-radius: 2vh;
 }
 
+.name-skills{
+    font-size: 10vh;
+}
+
+#python-skill-box{
+    background: linear-gradient(to right, #4B8BBE , #FFD43B);
+    box-shadow: 2px 4px 6px rgba(0,0,0,.5);
+}
+
+#python-skill{
+    padding-top: 1.25vh;
+    height: 20vh;
+    width: auto;
+    animation: up-down 5s infinite alternate;
+}
+
+#java-skill-box{
+    background: linear-gradient(to right, #f89820 33%, #5382a1);
+    box-shadow: 2px 4px 6px rgba(0,0,0,.5);
+}
+
+#java-skill{
+    padding-bottom: 1.25vh;
+    height: 20vh;
+    width: auto;
+    animation: up-down 4.9s infinite alternate;
+}
+
+@keyframes up-down {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(1vh);
+    }
+
+  }
