@@ -50,7 +50,7 @@ a{
     color: black;
 }
 
-.main-subject-box{
+.subject-box{
     height: auto;
 }
 
@@ -64,3 +64,24 @@ a{
     height: 100%;
     background-size: cover;
 }
+
+.subject-title{
+    padding-top: 10vh;
+    font-size: 6vw;
+}
+
+.subject-body{
+    padding: 10vw;
+    font-size: 3vw;
+}
+
+.skill-box-big{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 10vh;
+    width: 70vw;
+    font-size: 5vw;
+    background-color: grey;
+}
+
