@@ -9,7 +9,7 @@ div{
 
 body{
     font-family: main-font;
-    background: linear-gradient(to top, #ffffff, #ffffff);
+    background-color: rgb(206, 206, 206);
 }
 
 a{
@@ -37,7 +37,7 @@ a:hover{
     margin: 1vh;
     height: 100%;
     background-size: cover;
-    background-color: white;
+    background-color: #ffffff;
     box-shadow: 2px 4px 6px rgba(0,0,0,.5);
 }
 
@@ -75,7 +75,7 @@ a:hover{
     margin: 10px;
     height: 100%;
     background-size: cover;
-    background-color: white;
+    background-color: #ffffff;
     box-shadow: 2px 4px 6px rgba(0,0,0,.5);
 }
 
@@ -86,14 +86,14 @@ a:hover{
 }
 
 .subject-body{
-    padding: 10vw;
+    padding: 5vw;
     font-size: 3vw;
 }
 
 .skill-box-big{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
     height: 10vh;
     width: 70vw;
     font-size: 5vw;
@@ -113,7 +113,7 @@ a:hover{
     padding-top: 1.25vh;
     height: 20vh;
     width: auto;
-    animation: up-down 5s infinite alternate;
+    animation: up-down 4.7s infinite alternate;
 }
 
 #java-skill-box{
@@ -125,7 +125,114 @@ a:hover{
     padding-bottom: 1.25vh;
     height: 20vh;
     width: auto;
-    animation: up-down 4.9s infinite alternate;
+    animation: up-down 5.3s infinite alternate;
+}
+
+#c-skill-box{
+    background: linear-gradient(to right, #ffffff , #003DA7);
+    box-shadow: 2px 4px 6px rgba(0,0,0,.5);
+}
+
+#c-skill{
+    padding-top: 1.25vh;
+    height: 20vh;
+    width: auto;
+    animation: up-down 5s infinite alternate;
+}
+
+#k8-skill-box{
+    background: linear-gradient(to right, #346ce4, #ffffff);
+    box-shadow: 2px 4px 6px rgba(0,0,0,.5);
+    
+}
+
+#k8-skill{
+    padding-top: 1.25vh;
+    height: 25vh;
+    width: auto;
+    animation: up-down 5.7s infinite alternate;
+    padding-right: 5vh;
+    margin-left: 2vh;
+    
+}
+
+#k8-name-skill{
+    padding-right: 15vh;
+}
+
+#terraform-skill-box{
+    background: linear-gradient(to right, #4444b4, #846fec );
+    box-shadow: 2px 4px 6px rgba(0,0,0,.5);
+}
+
+#terraform-skill{
+    padding-top: 1.25vh;
+    height: 25vh;
+    width: auto;
+    animation: up-down 5.5s infinite alternate;
+}
+
+#aws-skill-box{
+    background: linear-gradient(to right, 	#232f3e, 	#ff9900 );
+    box-shadow: 2px 4px 6px rgba(0,0,0,.5);
+}
+
+#aws-skill{
+    padding-top: 1.25vh;
+    height: 15vh;
+    width: auto;
+    animation: up-down 4.5s infinite alternate;
+}
+
+.continue-to-explore-outer{
+    display: flex;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    height: 100vh;
+    width: 69vh;
+    
+    box-shadow: 2px 4px 6px rgba(0,0,0,.5);
+    border-radius: 10%;
+    justify-content: center;
+    align-items: center;
+}
+
+.continue-to-explore-inner{
+    display: grid;
+    height: 90vh;
+    width: 69vh;
+    border-radius: 5%;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 3vh;
+}
+
+.continue-to-explore-grid-object{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    width: 20vh;
+    border: black;
+    border-width: 1px;
+}
+
+.grid-img{
+    height: 10vh;
+    width: 10vh;
+    transition: transform 1s;
+}
+
+.grid-img:hover{
+    transform: scale(1.5);
+}
+
+@keyframes scale-good {
+    0%{
+        transform: scale(1.0);
+    }
+    100%{
+        transform: scale(1.5);
+    }
 }
 
 @keyframes up-down {
