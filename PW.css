@@ -3,6 +3,11 @@
     src:url(/resources/Alcubierre.otf)
 }
 
+
+html{
+    scroll-behavior: smooth;
+}
+
 div{
     display: block;
 }
@@ -14,7 +19,6 @@ body{
 
 a{
     text-decoration: none;
-    color: black;
     transition: .1s;
 }
 
@@ -62,6 +66,11 @@ a:hover{
     transition: .2s;
 }
 
+.nav-a{
+    color: black;
+}
+
+
 .subject-box{
     height: auto;
 }
@@ -98,6 +107,13 @@ a:hover{
     width: 70vw;
     font-size: 5vw;
     border-radius: 2vh;
+}
+
+.skills{
+    transition: transform 1s;
+}
+.skills:hover{
+    transform: scale(1.1);
 }
 
 .name-skills{
@@ -224,6 +240,137 @@ a:hover{
 
 .grid-img:hover{
     transform: scale(1.5);
+}
+
+#my-projects-title{
+    padding-bottom: 10vh;
+}
+
+.project-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 60vh;
+    width: 80vw;
+    margin-bottom: 5vh;
+}
+
+.single-project{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3vh;
+    margin: 2vh;
+    width: 40vw;
+    border-radius: 100px;
+    box-shadow: 2px 4px 6px rgba(0,0,0,.5);
+    transition: transform 1s;
+}
+
+.single-project:hover{
+    transform: scale(1.2);
+}
+
+.project-thumbnail{
+    height: 50%;
+    border: white solid 2px;
+    border-radius: 100%;
+    box-shadow: 2px 4px 6px rgba(0,0,0,.5);
+}
+
+.project-caption{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 2.5vh;
+}
+
+.project-link{
+    font-size: 3vh;
+    color: white;
+    border-radius: 20px;
+    padding-left: 1vh;
+    padding-right: 1vh;
+    margin: 2vh;
+    border: black solid 2px;
+    background: radial-gradient(#424242, #000000);
+    box-shadow: 2px 4px 6px rgba(0,0,0,.5);
+}
+
+#project-1-thumbnail{
+    border-radius: 50px;
+}
+
+#project-2-thumbnail{
+    height: 10vh;
+    
+}
+
+#project-3-thumbnail{
+    height: 30vh;
+    
+}
+
+#project-4-thumbnail{
+    height: 18vh;
+    width: 24vw;
+    border-radius: 50px;
+    
+}
+
+#project-1{
+    background: linear-gradient(to bottom, #426318, #b1974d);
+}
+
+#project-2{
+    background: linear-gradient(to bottom, #6bb3f2, #2b3443);
+}
+
+#project-3{
+    background: linear-gradient(to bottom, #2d2d2d, #9c9c9c);
+}
+
+#project-4{
+    background: linear-gradient(to bottom, #04046a, #bcbcbc,#fcfc04);
+}
+
+#contact-me-title{
+    margin-bottom: 10vh;
+}
+
+.contacts{
+    display: flex;
+    flex-direction: row;
+    height: 20vh;
+    width: 50vw;
+    justify-content: space-around;
+}
+
+.github-contact-img{
+    height: 10vh;
+}
+
+.linked-contact-img{
+    height: 10vh;
+}
+
+.email-contact-img{
+    height: 11vh;
+}
+
+.contact-object{
+    transition: transform .1s;
+}
+
+.contact-object:hover{
+    transform: scale(1.5);
+}
+
+footer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 
 @keyframes scale-good {

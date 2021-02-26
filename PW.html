@@ -20,27 +20,14 @@
           Andrew Dykema
         </div>
         <div class="nav-bar">
-          <a href="">My Story</a>
+          <a class="nav-a" href="#skills-title">Skills</a>
           |
-          <a href="">Skills</a>
+          <a class="nav-a" href="#my-projects-title">Projects</a>
           |
-          <a href="">Projects</a>
-          |
-          <a href="">Contact Me</a>
+          <a class="nav-a" href="#contact-me-title">Contact Me</a>
         </div>
         <div class="title-catch">
           Living for the disruptive · Blockchain maximalist
-        </div>
-      </div>
-    </div>
-    <!--MY-STORY-->
-    <div class="subject-box" id="my-story">
-      <div class="inner-subject-box">
-        <div class="subject-title" id="my-story-title">
-          My Story
-        </div>
-        <div class="subject-body body my-story">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
         </div>
       </div>
     </div>
@@ -177,6 +164,38 @@
         <div class="subject-title" id="my-projects-title">
           My Projects
         </div>
+        <div class="project-row">
+          <div class="single-project" id="project-1">
+            <img class="project-thumbnail" id="project-1-thumbnail" src="images/Mining.gif" alt="runescape">
+            <a class="project-link" href="https://github.com/atdykema/python_game_automation" target="_blank">GitHub</a>
+            <div class="project-caption">
+              Created scripts in Python which automates actions within a video game to make for easier gameplay. Uses PyAutoGUI module to allow for easier interaction with computer interface.
+            </div>
+          </div>
+          <div class="single-project" id="project-2">
+            <img class="project-thumbnail" id="project-2-thumbnail" src="images/blockchain.gif" alt="blockchain">
+            <a class="project-link" href="https://github.com/atdykema/blockchainProject" target="_blank">GitHub</a>
+            <div class="project-caption">
+              Based on the idea of recreating fundamental parts of the Bitcoin blockchain in Python as a way to hone skills relating to blockchain solutions and the Python language. The goal of the project is to completely recreate the blockchain to be as close to reality as possible while accounting for aspects of the Bitcoin Blockchain which cannot be replicated (history, exact timings).
+            </div>
+          </div>
+        </div>
+        <div class="project-row">
+          <div class="single-project" id="project-3">
+            <img class="project-thumbnail" id="project-3-thumbnail" src="images/clue.gif" alt="Clue">
+            <a class="project-link" href="https://github.com/atdykema/Clue-Project" target="_blank">GitHub</a>
+            <div class="project-caption">
+              A variation of the board game Clue written in C utilizing mostly arrays, pointers, and linked lists to keep track of game state.
+            </div>
+          </div>
+          <div class="single-project" id="project-4">
+            <img class="project-thumbnail" id="project-4-thumbnail" src="images/fileio.gif" alt="FileIO">
+            <a class="project-link" href="https://github.com/atdykema/FileIO-Project" target="_blank">GitHub</a>
+            <div class="project-caption">
+              Utilizing hash tables and binary search trees in C, this project is designed to take in text documents from piped-in files, the command line, and/or environment variables, counting and returning how many times every word is used in the passed texts.
+            </div>
+          </div>
+        </div>
       </div>
     </div>
     <!--CONTACT ME-->
@@ -185,8 +204,24 @@
         <div class="subject-title" id="contact-me-title">
           Contact me
         </div>
+        <div class="contacts">
+          <a class="contact-object" id="github-contact" href="https://github.com/atdykema">
+            <img class="github-contact-img" src="images/Octicons-mark-github.svg" alt="github">
+          </a>
+          <a class="contact-object" id="linked-contact" href="https://www.linkedin.com/in/andrew-dykema-721865178/">
+            <img class="linked-contact-img" src="images/iconmonstr-linkedin-3.svg" alt="linkedin">
+          </a>
+          <a class="contact-object" id="email-contact" href="mailto:atdykema@gmail.com">
+            <img class="email-contact-img" src="images/iconmonstr-email-2.svg" alt="email">
+          </a>
+        </div>
       </div>
     </div>
+    <footer>
+      <div>
+        Copyright © Andrew Dykema 2021
+      </div>
+    </footer>
     
     <script src="PW.js" async defer></script>
   </body>
