@@ -13,6 +13,9 @@ div{
 }
 
 body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     font-family: main-font;
     background-color: rgb(206, 206, 206);
 }
@@ -29,11 +32,13 @@ a:hover{
 
 .main-hero{
     height: 97vh;
+    margin-bottom: 3vh;
     
 }
 
 .inner-main-hero{
     display: flex;
+    width: 80vw;
     border-width: 1px;
     border: .1vw solid black;
     flex-direction: column;
@@ -43,11 +48,12 @@ a:hover{
     background-size: cover;
     background-color: #ffffff;
     box-shadow: 2px 4px 6px rgba(0,0,0,.5);
+    border-radius: 50px;
 }
 
 .title-name{
     color: black;
-    margin-top: 10vh;
+    padding-top: 8vh;
     font-size: 10vw;
     transition: .1s;
 }
@@ -60,7 +66,7 @@ a:hover{
 }
 
 .nav-bar{
-    padding-top: 15vh;
+    padding-top: 10vh;
     font-size: 4vw;
     color: black;
     transition: .2s;
@@ -77,6 +83,7 @@ a:hover{
 
 .inner-subject-box{
     display: flex;
+    width: 80vw;
     border-width: 1px;
     border: .1vw solid black;
     flex-direction: column;
@@ -86,6 +93,7 @@ a:hover{
     background-size: cover;
     background-color: #ffffff;
     box-shadow: 2px 4px 6px rgba(0,0,0,.5);
+    border-radius: 50px;
 }
 
 .subject-title{
