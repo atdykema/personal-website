@@ -308,13 +308,13 @@ a:hover{
 
 #project-3-thumbnail{
     height: 30vh;
-    
+    border-radius: 20px;
 }
 
 #project-4-thumbnail{
     height: 18vh;
     width: 24vw;
-    border-radius: 50px;
+    border-radius: 20px;
     
 }
 
