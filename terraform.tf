@@ -1,7 +1,7 @@
 variable "website_type" {
-    description = "choose between ec2 or s3 website hosting, chooses s3 by default"
-    default = "./terraform_files/s3"
-} 
+    description = "use either s3 or ec2 setup"
+    default = "s3"
+}
 
 provider "aws" {
   region = "us-east-1"
@@ -9,5 +9,5 @@ provider "aws" {
 }
 
 module "website" {
-  source = var.website_type
+  source = "./terraform_files/${var.website_type}"
 }

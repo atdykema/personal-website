@@ -54,6 +54,31 @@ resource "aws_launch_configuration" "lc1" {
   }
 }
 
+/*security group for launch config*/
+resource "aws_security_group" "lc-security" {
+  name = "lc-security"
+
+/*all outbound*/
+  egress {
+    from_port = 0
+    to_port = 0
+    protocol = "-1"
+    cidr_blocks = ["0.0.0.0/0"]
+  }
+/*all inbound*/
+  ingress {
+    from_port = "8080"
+    to_port = "8080"
+    protocol = "tcp"
+    cidr_blocks = ["0.0.0.0/0"]
+  }
+
+lifecycle {
+    create_before_destroy = true
+  }
+
+}
+
 /*autoscaling policy, commands autoscaling whenever pod reaches over 80% CPU usage*/
 resource "aws_autoscaling_policy" "ag1-policy" {
   name = "ag1-policy"
@@ -85,9 +110,48 @@ resource "aws_autoscaling_group" "ag1"{
     }
 }
 
+/*elastic load balancer for web servers*/
+resource "aws_elb" "elb1" {
+  name               = "elb1"
+  availability_zones = ["us-east-1"]
+  security_groups = ["${aws_security_group.elb-security.id}"]
 
+  listener {
+    instance_port = 80
+    instance_protocol  = "http"
+    lb_port            = 8080
+    lb_protocol        = "http"
+  }
 
+  health_check {
+    healthy_threshold   = 2
+    unhealthy_threshold = 2
+    timeout             = 3
+    target              = "HTTP:8080/PW.html"
+    interval            = 30
+  }
+}
 
+/*security group for elb*/
+resource "aws_security_group" "elb-security" {
+  name = "elb-security"
+
+/*all outbound*/
+  egress {
+    from_port = 0
+    to_port = 0
+    protocol = "-1"
+    cidr_blocks = ["0.0.0.0/0"]
+  }
+
+/*all inbound*/
+  ingress {
+    from_port = "8080"
+    to_port = "8080"
+    protocol = "tcp"
+    cidr_blocks = ["0.0.0.0/0"]
+  }
+}
 
 
 
