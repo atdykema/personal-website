@@ -17,7 +17,7 @@ resource "aws_s3_bucket" "website_bucket" {
   policy = data.aws_iam_policy_document.website_policy.json
   website {
     index_document = "PW.html"
-    error_document = "error.html"
+    error_document = "PW.html"
   }
 }
 
