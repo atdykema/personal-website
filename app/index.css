@@ -17,7 +17,7 @@ body{
     flex-direction: column;
     align-items: center;
     font-family: main-font;
-    background: url(images/phasnr_background_ps.png);
+    background: radial-gradient(rgb(255, 209, 83), rgb(255, 239, 195));
 }
 
 a{
@@ -27,91 +27,104 @@ a{
 
 a:hover{
     animation: button-hover ease .1s;
-    color: rgb(255, 174, 174);
+    color: rgb(253, 255, 231);
 }
 
 .main-hero{
-    height: 97vh;
-    margin-bottom: 3vh;
+    width: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1vh;
     
 }
 
 .inner-main-hero{
     display: flex;
-    width: 80vw;
-    border-width: 1px;
-    border: 1px solid white;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
+    justify-content: center;
     margin: 1vh;
     height: 100%;
-    background-size: cover;
-    background: rgba(168, 168, 168, 0.1);
-    box-shadow: 2px 4px 6px rgba(0,0,0,.5);
+    width: 92%;
     border-radius: 50px;
+
 }
 
 .title-name{
-    color: black;
-    padding-top: 8vh;
-    font-size: 10vw;
+    display: flex;
+    width: 92%;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 2vw;
     transition: .1s;
 }
 
-.title-catch{
-    color: black;
-    margin-top: 15vh;
-    font-size: 4vw;
-    transition: .3s;
+.main-board{
+    display: flex;
+    flex-direction: row;
+    width: 96%;
+    border-radius: 25px;
+    height: 88%;
 }
 
-.nav-bar{
-    padding-top: 10vh;
-    font-size: 4vw;
-    color: black;
-    transition: .2s;
+.grid-box{
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    width: 33.3%;
+    background-color: rgb(165, 165, 165);
 }
 
-.nav-a{
-    color: black;
+.box-inner{
+    display: flex;
+    justify-content: center;
+    
+    padding: 1%;
 }
-
 
 .subject-box{
+    display: flex;
+    justify-content: center;
+    margin: 1vw;
     height: auto;
+    
 }
 
 .inner-subject-box{
     display: flex;
-    width: 80vw;
-    border: 1px solid white;
+    width: 75%;
+    border-width: 1px;
     flex-direction: column;
     align-items: center;
-    margin: 10px;
     height: 100%;
     background-size: cover;
-    background: rgba(168, 168, 168, 0.1);
+    background: rgba(255, 255, 255, 0.1);
     box-shadow: 2px 4px 6px rgba(0,0,0,.5);
     border-radius: 50px;
 }
 
 .subject-title{
-    padding-top: 10vh;
+    padding-top: 2vh;
     font-size: 6vw;
     font-weight: 500;
 }
 
 .subject-body{
-    padding: 5vw;
+    padding: 10%;
     font-size: 3vw;
+    
+}
+
+#skills-title{
+    font-size: 5vh;
 }
 
 .skill-box-big{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    height: 10vh;
-    width: 70vw;
+    height: 6vh;
+    width: 25vw;
     font-size: 5vw;
     border-radius: 2vh;
 }
@@ -124,7 +137,7 @@ a:hover{
 }
 
 .name-skills{
-    font-size: 10vh;
+    font-size: 6vh;
 }
 
 #python-skill-box{
@@ -133,8 +146,8 @@ a:hover{
 }
 
 #python-skill{
-    padding-top: 1.25vh;
-    height: 20vh;
+    padding-top: 1vh;
+    height: 15vh;
     width: auto;
     animation: up-down 4.7s infinite alternate;
 }
@@ -145,8 +158,8 @@ a:hover{
 }
 
 #java-skill{
-    padding-bottom: 1.25vh;
-    height: 20vh;
+    padding-bottom: 1vh;
+    height: 15vh;
     width: auto;
     animation: up-down 5.3s infinite alternate;
 }
@@ -157,8 +170,8 @@ a:hover{
 }
 
 #c-skill{
-    padding-top: 1.25vh;
-    height: 20vh;
+    padding-top: 1vh;
+    height: 15vh;
     width: auto;
     animation: up-down 5s infinite alternate;
 }
@@ -170,8 +183,8 @@ a:hover{
 }
 
 #k8-skill{
-    padding-top: 1.25vh;
-    height: 25vh;
+    padding-top: 1vh;
+    height: 20vh;
     width: auto;
     animation: up-down 5.7s infinite alternate;
     padding-right: 5vh;
@@ -189,8 +202,8 @@ a:hover{
 }
 
 #terraform-skill{
-    padding-top: 1.25vh;
-    height: 25vh;
+    padding-top: 1vh;
+    height: 20vh;
     width: auto;
     animation: up-down 5.5s infinite alternate;
 }
@@ -201,8 +214,8 @@ a:hover{
 }
 
 #aws-skill{
-    padding-top: 1.25vh;
-    height: 15vh;
+    padding-top: 1vh;
+    height: 10vh;
     width: auto;
     animation: up-down 4.5s infinite alternate;
 }
@@ -213,7 +226,7 @@ a:hover{
     margin-bottom: 5vh;
     height: 100vh;
     width: 69vh;
-    border: solid white 2px;
+    
     box-shadow: 2px 4px 6px rgba(0,0,0,.5);
     border-radius: 10%;
     justify-content: center;
@@ -235,7 +248,7 @@ a:hover{
     align-items: center;
     height: 10vh;
     width: 20vh;
-    border: white;
+    border: black;
     border-width: 1px;
 }
 
@@ -250,15 +263,17 @@ a:hover{
 }
 
 #my-projects-title{
-    padding-bottom: 10vh;
+    padding-bottom: 2%;
+    font-size: 100%;
+    letter-spacing: 1vw;
 }
 
 .project-row{
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    height: 60vh;
-    width: 80vw;
+    justify-content: space-between;
+    height: 100%;
+    width: 50%;
     margin-bottom: 5vh;
 }
 
@@ -266,12 +281,10 @@ a:hover{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 3vh;
-    margin: 2vh;
-    width: 40vw;
-    border-radius: 100px;
-    border: solid white 2px;
+    padding: 1vh;
     
+    width: 30%;
+    border-radius: 100px;
     box-shadow: 2px 4px 6px rgba(0,0,0,.5);
     transition: transform 1s;
 }
@@ -316,18 +329,32 @@ a:hover{
 }
 
 #project-3-thumbnail{
-    height: 30vh;
+    height: 10vh;
     border-radius: 20px;
 }
 
 #project-4-thumbnail{
-    height: 18vh;
-    width: 24vw;
+    height: 10vh;
+    width: 8vw;
     border-radius: 20px;
     
 }
 
+#project-1{
+    background: linear-gradient(to bottom, #426318, #b1974d);
+}
 
+#project-2{
+    background: linear-gradient(to bottom, #6bb3f2, #2b3443);
+}
+
+#project-3{
+    background: linear-gradient(to bottom, #2d2d2d, #9c9c9c);
+}
+
+#project-4{
+    background: linear-gradient(to bottom, #04046a, #bcbcbc,#fcfc04);
+}
 
 #contact-me-title{
     margin-bottom: 10vh;
