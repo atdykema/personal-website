@@ -52,15 +52,15 @@ a:hover{
 }
 
 .title-name{
-    color: black;
+    color: white;
     padding-top: 8vh;
     font-size: 10vw;
     transition: .1s;
 }
 
 .title-catch{
-    color: black;
-    margin-top: 15vh;
+    color: white;
+    
     font-size: 4vw;
     transition: .3s;
 }
@@ -68,12 +68,13 @@ a:hover{
 .nav-bar{
     padding-top: 10vh;
     font-size: 4vw;
-    color: black;
+    color: white;
     transition: .2s;
+    margin-bottom: 15vh;
 }
 
 .nav-a{
-    color: black;
+    color: white;
 }
 
 
@@ -99,6 +100,7 @@ a:hover{
     padding-top: 10vh;
     font-size: 6vw;
     font-weight: 500;
+    color: white;
 }
 
 .subject-body{
@@ -125,6 +127,7 @@ a:hover{
 
 .name-skills{
     font-size: 10vh;
+    color:white;
 }
 
 #python-skill-box{
@@ -205,6 +208,30 @@ a:hover{
     height: 15vh;
     width: auto;
     animation: up-down 4.5s infinite alternate;
+}
+
+#linux-skill{
+    padding-top: 1.25vh;
+    height: 25vh;
+    width: auto;
+    animation: up-down 5.3s infinite alternate;
+}
+
+#linux-skill-box{
+    background: linear-gradient(to right, #ffdf2d 30%, #000000, #ffffff);
+    box-shadow: 2px 4px 6px rgba(0,0,0,.5);
+}
+
+#docker-skill-box{
+    background: linear-gradient(to right, 	#52a0ff, 	#bebebe );
+    box-shadow: 2px 4px 6px rgba(0,0,0,.5);
+}
+
+#docker-skill{
+    padding-top: 1.25vh;
+    height: 15vh;
+    width: auto;
+    animation: up-down 4.9s infinite alternate;
 }
 
 .continue-to-explore-outer{
@@ -292,6 +319,7 @@ a:hover{
     flex-direction: column;
     align-items: center;
     font-size: 2.5vh;
+    color: white;
 }
 
 .project-link{
