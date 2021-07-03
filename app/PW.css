@@ -231,6 +231,18 @@ a:hover{
     padding-top: 1.25vh;
     height: 15vh;
     width: auto;
+    animation: up-down 4s infinite alternate;
+}
+
+#git-skill-box{
+    background: linear-gradient(to right, 	#000000, 	#ffffff );
+    box-shadow: 2px 4px 6px rgba(0,0,0,.5);
+}
+
+#git-skill{
+    padding-top: 1.25vh;
+    height: 15vh;
+    width: auto;
     animation: up-down 4.9s infinite alternate;
 }
 
