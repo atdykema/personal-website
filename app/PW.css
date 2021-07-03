@@ -40,7 +40,7 @@ a:hover{
     display: flex;
     width: 80vw;
     border-width: 1px;
-    border: 1px solid white;
+    
     flex-direction: column;
     align-items: center;
     margin: 1vh;
@@ -85,7 +85,6 @@ a:hover{
 .inner-subject-box{
     display: flex;
     width: 80vw;
-    border: 1px solid white;
     flex-direction: column;
     align-items: center;
     margin: 10px;
