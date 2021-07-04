@@ -70,7 +70,7 @@ a:hover{
     font-size: 4vw;
     color: white;
     transition: .2s;
-    margin-bottom: 15vh;
+    margin-bottom: 10vh;
 }
 
 .nav-a{
@@ -249,7 +249,7 @@ a:hover{
     display: flex;
     margin-top: 5vh;
     margin-bottom: 5vh;
-    height: 100vh;
+    height: 90vh;
     width: 69vh;
     border: solid white 2px;
     box-shadow: 2px 4px 6px rgba(0,0,0,.5);
@@ -260,6 +260,7 @@ a:hover{
 
 .continue-to-explore-inner{
     display: grid;
+    padding-top: 15%;
     height: 90vh;
     width: 69vh;
     border-radius: 5%;
