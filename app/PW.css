@@ -53,24 +53,24 @@ a:hover{
 
 .title-name{
     color: white;
-    padding-top: 8vh;
-    font-size: 10vw;
+    margin-bottom: 13vh;
+    font-size: 8vw;
     transition: .1s;
 }
 
 .title-catch{
     color: white;
     
-    font-size: 4vw;
+    font-size: 3vw;
     transition: .3s;
 }
 
 .nav-bar{
     padding-top: 10vh;
-    font-size: 4vw;
+    font-size: 3vw;
     color: white;
     transition: .2s;
-    margin-bottom: 10vh;
+    margin-bottom: 13vh;
 }
 
 .nav-a{
